@@ -11,9 +11,12 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/vue-fontawesome": "^3.0.3",
     "pinia": "^2.0.32",
     "vue": "^3.2.47",
-    "vue-awesome": "^4.5.0",
+    "vue-material-design-icons": "^5.2.0",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {

@@ -3,16 +3,22 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
+  <div id="root">
+
   <header>
     <div class="wrapper">
       <nav class="nav-bar">
         <RouterLink class="nav-item" to="/">Collection</RouterLink>
         <RouterLink class="nav-item" to="/about">Story-Ideas</RouterLink>
+        
       </nav>
     </div>
   </header>
-
+<div class="content-wrapper">
   <RouterView />
+</div>
+</div>
+
 </template>
 
 <style scoped>
@@ -39,5 +45,8 @@ import { RouterLink, RouterView } from 'vue-router'
 }
 .router-link-active{
   color: var(--color_nav);
+}
+.content-wrapper{
+  padding-top: 1rem;
 }
 </style>

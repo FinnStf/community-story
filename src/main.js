@@ -4,16 +4,17 @@ import App from './App.vue'
 import router from './router'
 
 import './assets/main.css'
-// or import all icons if you don't care about bundle size
-import 'vue-awesome/icons'
 
-import Icon from 'vue-awesome/components/Icon'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faThumbsUp } from '@fortawesome/free-solid-svg-icons'
+import { faCircleArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-
+library.add(faThumbsUp)
+library.add(faCircleArrowLeft)
 
 const app = createApp(App)
-// globally (in your main .js file)
-app.component('v-icon', Icon)
+app.component('font-awesome-icon', FontAwesomeIcon)
 app.use(createPinia())
 app.use(router)
 
