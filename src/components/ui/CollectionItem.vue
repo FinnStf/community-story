@@ -49,8 +49,8 @@ const storyPreview = computed(() => {
     <div class="story">
       <h1 class="story-title">{{ title }}</h1>
       <span>{{ storyPreview }}</span>
-      <div class="read-more-btn">
-        <RouterLink to="/story">Story-Ideas</RouterLink>
+      <div class="read-more-btn-wrapper">
+        <RouterLink class="read-more-btn clickable" to="/story">Weiterlesen</RouterLink>
       </div>
     </div>
     <div class="btn-wrapper">
@@ -77,7 +77,10 @@ const storyPreview = computed(() => {
   margin-bottom: 0.5rem;
   font-weight: bold;
 }
-.read-more-btn {
+.read-more-btn-wrapper {
   margin-top: 0.5rem;
+}
+.read-more-btn {
+  color: var(--color_link);
 }
 </style>

@@ -1,12 +1,12 @@
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
   --bright_white: #ffffff;
-  --white-soft: #f8f8f8;
+  --white-soft: #ebebeb;
 
+  --grey:  rgba(60, 60, 60, 0.66);
   --black: #181818;
-  --black-soft: #222222;
+  --black-soft: rgba(60, 60, 60, .7);
 
-  --color_text: rgba(60, 60, 60, 0.66);
   --color_nav: rgba(2, 167, 240, 1);
   --color_nav_line: rgb(151, 151, 151);
   --menu-font-size: 1.5rem;
@@ -16,7 +16,11 @@
 /* semantic color variables for this project */
 :root {
   /*--color-background: var(--black-soft);*/
-  --color-background: var(--black-soft)
+  --color-background: var(--white-soft);
+  --color-background-story: var(--bright_white);
+  --color_text: var(--grey);
+  --color_link: var(--black-soft);
+  --color_link_hover: var(--black)
 }
 
 @media (prefers-color-scheme: dark) {

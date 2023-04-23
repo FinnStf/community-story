@@ -12,9 +12,6 @@ a {
   text-decoration: none;
   transition: 0.4s;
 }
-
-@media (hover: hover) {
-  a:hover {
-    background-color: rgba(2, 167, 240, 0.2);
-  }
+.clickable:hover{
+  color: var(--color_link_hover)!important;
 }

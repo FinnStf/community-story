@@ -13,7 +13,7 @@ const increment = ()=>{
 </script>
 <template>
     <div @click="increment" class="button-box">
-      <font-awesome-icon class="like-icon fa-2xl" icon="thumbs-up" :bounce="icon_animation"/>
+      <font-awesome-icon class="like-icon fa-2xl clickable" icon="thumbs-up" :bounce="icon_animation"/>
       {{ like_counter }}
     </div>
 </template>

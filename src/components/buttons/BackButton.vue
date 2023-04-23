@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 const props = defineProps({
   path: {
@@ -14,16 +13,16 @@ const navigate = () => {
 </script>
 <template>
   <div @click="navigate" :to="path" class="back-button">
-    <font-awesome-icon class="back-icon" icon="circle-arrow-left" />
+    <font-awesome-icon class="back-icon clickable" icon="circle-arrow-left" />
   </div>
 </template>
 <style>
 .back-icon {
-  transition: transform 0.2s ease-in-out;
+  transition: all 0,2s ease-in-out;
   transform-origin: center;
   height: 3rem;
 }
 .back-icon:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 </style>

@@ -1,0 +1,42 @@
+export const demo_data = [
+    {
+        "_id": "644170219d553f8ce951babf",
+        "creatorId": "8wYb5HQ1ophMAlFUbZxVa2YbAQF3",
+        "title": "Demo Titel 1",
+        "likes": 0,
+        "story": [
+            {
+                "creatorId": "8wYb5HQ1ophMAlFUbZxVa2YbAQF3",
+                "storyStart": "das ist der start-text",
+                "likes": 0
+            },
+            {
+                "creatorId": "W0gd4Ijh8yZ1tGpyznWb1w4Hj302",
+                "text": "testing  2",
+                "likes": 0,
+                "_id": "64416fb59d553f8ce951baac"
+            },
+            {
+                "creatorId": "W0gd4Ijh8yZ1tGpyznWb1w4Hj302",
+                "text": "testing  4",
+                "likes": 0,
+                "_id": "644170049d553f8ce951bab7"
+            }
+        ],
+        "__v": 0
+    },
+    {
+        "_id": "644183cb10bada7f3ae84642",
+        "creatorId": "W0gd4Ijh8yZ1tGpyznWb1w4Hj302",
+        "title": "Demo Titel 2",
+        "likes": 0,
+        "story": [
+            {
+                "creatorId": "W0gd4Ijh8yZ1tGpyznWb1w4Hj302",
+                "storyStart": "und ich zeig meine problems",
+                "likes": 0
+            }
+        ],
+        "__v": 0
+    }
+]
